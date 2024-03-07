@@ -43,7 +43,7 @@ h1{
 .app .search
 {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .app input{
@@ -58,9 +58,14 @@ h1{
 {
   color: #f8f8f8;
 }
+.main
+{
+  display: flex;
+  justify-content: space-around;
+}
 .container{
   max-width: 700px;
-  height: 70vh;
+  height: 75vh;
   /* margin: auto; */
   padding: 0 5rem;
   position: relative;
@@ -68,6 +73,7 @@ h1{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 
 }
 .app .top
@@ -88,20 +94,43 @@ h1{
 .app .bottom
 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  gap: 2rem;
   text-align: center;
   width: 100%;
   margin: 1rem auto;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 12px;
   background-color: rgba(255,255,255, 0.2);
 
 }
-
 .bold
 {
   font-weight: 700  ;
 }
+
+.container2
+{
+  border-radius: 12px;
+  background-color: rgba(255,255,255, 0.2);
+  padding: 1.5rem;
+  width: 30%;
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 400px)
 {

@@ -55,6 +55,7 @@ const searchLocation = (event) => {
         placeholder='Enter Location'
         type="text" />
       </div>
+      <div className="main">
       <div className='container'>
         <div className='top'>
           <div className="location">
@@ -92,6 +93,17 @@ const searchLocation = (event) => {
 
 
       </div>
+      <div className="container2">
+        
+
+
+
+
+
+        
+      </div>
+      </div>
+     
 
     </div>
   )
