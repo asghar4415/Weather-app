@@ -66,7 +66,6 @@ h1{
 .container{
   max-width: 700px;
   height: 75vh;
-  /* margin: auto; */
   padding: 0 5rem;
   position: relative;
   top: 10%;
@@ -83,13 +82,59 @@ h1{
 
 }
 
+.app .top-1
+{
+  width: 100%;
+}
+.top-1 .location-1 p
+{
+  font-size: 1rem;
+}
+.top-1 .description-1
+{
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: rotate(269deg);
+  
+  margin-bottom: -.5rem;
+
+  display: flex;
+  align-items: center;
+}
+.description-1 img{
+  width: 50px;
+  height: 50px;
+
+}
+.top-1 .description-1 p
+{
+  font-size: 1.3rem;
+  margin-left: -2.5rem;
+}
+.top-1 .temp-1 h1{
+  margin-top: 1rem;
+  font-size: 2rem;
+  margin-bottom: -1rem;
+}
+
+
 .app .description
 {
   position: relative;
   right: -90%;
   transform-origin: 0 0;
   transform: rotate(269deg);
+  display: flex;
+  align-items: center;
 }
+.app .description img{
+  width: 50px;
+  height: 50px;
+
+}
+
+
 
 .app .bottom
 {
@@ -112,9 +157,21 @@ h1{
 .container2
 {
   border-radius: 12px;
-  background-color: rgba(255,255,255, 0.2);
+  background-color: rgba(255, 255, 255, 0);
   padding: 1.5rem;
   width: 30%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.container2-1
+{
+  border-radius: 12px;
+  background-color: rgba(255,255,255, 0.2);
+  padding: 1.5rem;
+  width: 100%;
   
 
 }
@@ -137,14 +194,17 @@ h1{
   .app .container
   {
     padding: 0 1rem;
+    width: 95%;
   }
   .app .bottom
   {
     flex-direction: column;
+    width: 90%;
+    /* height: 8rem; */
   }
   .app .bottom div
   {
-    margin: 1rem 0;
+    margin: .5rem 0;
   }
   .app .bottom div:last-child
   {
@@ -159,5 +219,36 @@ h1{
     font-size: 3rem
 
   }
+
+  .app{
+    height: auto;
+  }
   
+  .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+
+  }
+
+  .container2{
+    width: 90%;
+    margin: 1rem auto;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 1rem;
+
+  }
+
+
 }
