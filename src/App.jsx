@@ -7,8 +7,10 @@ function App() {
   const [data,setData]=useState({})
   const [futureData,setFutureData]=useState([])
   const [location, setLocation] = useState('')
+
+  const API_KEY = '988cdcf53c4792a36770cd7c6f58ed96'
   
- const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=988cdcf53c4792a36770cd7c6f58ed96`
+ const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${API_KEY}`
 
 
  useEffect(() => {
@@ -33,7 +35,7 @@ function showPosition(position) {
   latitude = position.coords.latitude;
   longitude = position.coords.longitude;
 
-  axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=988cdcf53c4792a36770cd7c6f58ed96`).then((response) => {
+  axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${API_KEY}`).then((response) => {
     setData(response.data)
     fetchFutureWeather(latitude, longitude)
 
@@ -46,7 +48,7 @@ function showPosition(position) {
 const fetchFutureWeather = (lat, lon) => {
   axios
     .get(
-      `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=988cdcf53c4792a36770cd7c6f58ed96`
+      `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`
     )
     .then((response) => {
       const dailyData = processForecastData(response.data.list);

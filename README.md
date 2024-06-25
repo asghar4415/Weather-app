@@ -1,8 +1,11 @@
 # Weather Forecast App
 
-![App Screenshot](./screenshot.png)
 
 This is a simple weather forecast application built using React.js and the OpenWeatherMap API. It allows users to get the current weather and a 3-day forecast based on either their current location (using geolocation) or a location they input.
+
+## Live Demo
+
+https://weather-app-asghar4415s-projects.vercel.app/
 
 ## Features
 
@@ -23,24 +26,25 @@ To run this application locally, follow these steps:
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/weather-forecast-app.git
+git clone https://github.com/asghar4415/Weather-app.git
 
 
 2. Install dependencies:
 
-cd weather-forecast-app
+cd Weather-app
 npm install
 
 
-3. Get your API key from [OpenWeatherMap](https://openweathermap.org/api) and replace `YOUR_API_KEY` in `App.js` with your actual API key.
+3. Get your API key from [OpenWeatherMap](https://openweathermap.org/api) and replace `YOUR_API_KEY` in `App.jsx` with your actual API key.
 
 4. Start the development server:
 
-npm start
+npm run dev
 
 5. Open your browser and navigate to:
 
-https://weather-app-asghar4415s-projects.vercel.app/
+http://localhost:3000/
+
 
 
 6. Enter a location in the search bar or allow geolocation to see weather information.
@@ -50,8 +54,5 @@ https://weather-app-asghar4415s-projects.vercel.app/
 - Weather icons by [OpenWeatherMap](https://openweathermap.org/weather-conditions)
 - Inspired by various weather applications and tutorials on React.js
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 
