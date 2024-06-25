@@ -31,15 +31,16 @@ To run this application locally, follow these steps:
 
 2. Install dependencies:
 
-cd Weather-app
-npm install
+`cd Weather-app`
+
+`npm install`
 
 
 3. Get your API key from [OpenWeatherMap](https://openweathermap.org/api) and replace `YOUR_API_KEY` in `App.jsx` with your actual API key.
 
 4. Start the development server:
 
-npm run dev
+`npm run dev`
 
 5. Open your browser and navigate to:
 
